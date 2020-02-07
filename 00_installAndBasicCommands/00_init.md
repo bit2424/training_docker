@@ -39,6 +39,15 @@ docker pull busybox
 ```
 
 We get output:
+```
+$ docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete 
+Digest: sha256:9572f7cdcee8591948c2963463447a53466950b3fc15a247fcad1917ca215a2f
+Status: Downloaded newer image for hello-world:latest
+docker.io/library/hello-world:latest
+```
 
 
 Run Download Images:
@@ -50,27 +59,27 @@ docker run -t -d busybox
 
 ### Basic commands Docker
 The Next commands will do to you more get familiar with Docker.
-| List running containers |
-| ----------------------- |
-| command: | | ```docker ps``` |
-| output: |
+| List running containers | |
+| ------ |----- |
+| command: | ```docker ps``` |
+| output: | ![alt text](https://i.ibb.co/SyJ7VPq/docker1.png) |
 
 
-| List running containers with status exited |
-| ----------------------- |
-| command: | | ```docker ps -a``` |
-| output: |
+| List running containers with status exited | |
+| ------- | ------ |
+| command: | ```docker ps -a``` |
+| output: | ![alt text](https://i.ibb.co/SyJ7VPq/docker1.png) |
 
-| List images |
-| ----------------------- |
-| command: | | ```docker images``` |
-| output: |
+| List images | |
+| ------- | ------ |
+| command: | ```docker images``` |
+| output: | ![alt text](https://i.ibb.co/1st2rCy/docker2.png) |
 
-| Login into containers |
-| ----------------------- |
-| command: | | ```docker exec -it <id container> <comando a ejecutar en consola>``` |
-| example: | | ```docker exec -it f349 /bin/sh```
-| output: | 
+| Login into containers | ------ |
+| ----------------------- | ------ |
+| command: | ```docker exec -it <id container> <comando a ejecutar en consola>``` |
+| example: | ```docker exec -it f349 /bin/sh``` |
+| output: | ```!# ```|
 
 **what do -it parameter?**
 
@@ -85,3 +94,7 @@ dry (Para ejecutar la herramienta)
 ## Discovery Dry Tool
 
 You are free to explore Dry Tool like management and monitor for docker containers :D 
+
+## Mini Challenge
+
+Search, Pull, Run and Play Supermario image :D +3 Point 
