@@ -72,15 +72,16 @@ EXPOSE 80
 CMD ["-D","FOREGROUND"]
 ENTRYPOINT ["/usr/sbin/httpd"]
 ```
-Bonus: Explain whats is the diference between CMD and ENTRYPOINT (+1)
-Bonus2: Optimize image
+Bonus: Explain whats is the diference between CMD and ENTRYPOINT (+1) 
+Bonus2: Optimize image (+3) 
+
 
 9. Save Dockerfile and BUILD and RUN image (If you dont know, you can go to https://github.com/icesi-devops/training_docker :) )
 
 
 ## CHALLENGE
 
-This Challege Give +5 points :) 
+This Challege Give +7 points :) 
 
 You should fork the next repo: https://github.com/ikermatias/todo-angular. It contains a TodoApp made in Angular.
 You Should make and Dockerfile that deploy the app in a container :) !
