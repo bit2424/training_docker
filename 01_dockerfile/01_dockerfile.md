@@ -39,32 +39,39 @@ cd 01_dockerfile
 nano Dockerfile
 ```
 3. Add instruction MAINTANER (maintaner instruction set Autor field.
+```
 MAINTANER JSGD@DEVOPS.COM
-
+```
 4. Add instruction FROM alpine
+```
 FROM alpine:latest
+```
 
 5. Add command RUN for download and install APACHE2
+```
 RUN apk --no-cache upgrade
 RUN apk add --no-cache apache2
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-
+```
 
 6. Add instruction RUN for download WGET and we can download icesi page
+```
 RUN apk add wget
+```
 
 7. Add next instructions 
+```
 RUN rm /var/www/localhost/htdocs/index.html
 WORKDIR /var/www/localhost/htdocs
 RUN wget -O index.html www.icesi.edu.co
+```
 
 8. Add next instructions
+```
 EXPOSE 80
-
 CMD ["-D","FOREGROUND"]
-
 ENTRYPOINT ["/usr/sbin/httpd"]
-
+```
 Bonus: Explain whats is the diference between CMD and ENTRYPOINT (+1)
 Bonus2: Optimize image
 
@@ -76,7 +83,7 @@ Bonus2: Optimize image
 This Challege Give +5 points :) 
 
 You should fork the next repo: https://github.com/ikermatias/todo-angular. It contains a TodoApp made in Angular.
-You Should make Dockerfile that deploy the app in a container :) !
+You Should make and Dockerfile that deploy the app in a container :) !
 
 
 ### REFERENCES
