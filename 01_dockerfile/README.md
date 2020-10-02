@@ -8,8 +8,8 @@
 <nombreCUentaDockeerHub>/<nombreRepoDockerhub>
 
 TODO:
-1. Desplegar servidor web scraping icesi alpine image base
-2. Analizar pesos de imagenes cuando: Tenemos varios RUN en el dockerfile y cuando tenemos un solo RUN en el docker
+1. Desplegar servidor web scraping icesi usando una imagen de alpine como base
+2. Analizar pesos(MB) de imagenes cuando: Tenemos varios RUN en el dockerfile y cuando tenemos un solo RUN en el dockerfile
 3. Decir las diferencias entre CMD y ENTRYPOINT
 
 
