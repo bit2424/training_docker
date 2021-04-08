@@ -1,27 +1,13 @@
 ## Manual taks
 
-1. apt update
-2. apt install apache
-3. apt install wget
-4. service apache2 start
-
-<nombreCUentaDockeerHub>/<nombreRepoDockerhub>
 
 TODO:
-1. Desplegar servidor web scraping icesi usando una imagen de alpine como base
-2. Analizar pesos(MB) de imagenes cuando: Tenemos varios RUN en el dockerfile y cuando tenemos un solo RUN en el dockerfile
-3. Decir las diferencias entre CMD y ENTRYPOINT
+1. Crear Dockerfile y subirlo al dockerhub de la sgnte app --> https://github.com/ikermatias/todo-angular
+2. Investigar la diferencia entre CMD y ENTRYPOINT
+3. Analizar pesos(MB) de imagenes cuando: Tenemos varios RUN en el dockerfile y cuando tenemos un solo RUN en el dockerfile
 
+DELIVER:
+Readme.md que contenga el nombre de la imagen que construyeron: 
+EL resultado de la investigación.
 
-RUN apt update
-RUN apt install -y wget
-
-docker build ... 80MB
-
-RUN apt update && / apt install -y wget
-
-docker build --- 100MB o 50MB
-
-PR to github.com/icesiops/sd-workshop3
-
-WHEN: Hasta el Domingo 11:59pm 04/09/2020
+Hasta el domingo 11 de abril 11:59pm, debería de ser un PR a https://github.com/icesi-ops/sd-workshop3
