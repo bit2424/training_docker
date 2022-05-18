@@ -1,12 +1,8 @@
 FROM alpine
-LABEL mail: daniel.barragan@correo.icesi.edu.co
 
-RUN apk add --update \
-    python \
-    python-dev \
-    py-pip \
-    build-base \
-  && rm -rf /var/cache/apk/*
+RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
+RUN python3 -m ensurepip
+RUN pip3 install --no-cache --upgrade pip setuptools
 
 COPY . /app
 RUN pip install -r /app/requirements.txt
